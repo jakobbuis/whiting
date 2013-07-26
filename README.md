@@ -14,4 +14,4 @@ Whiting is a Javascript SPA built primarily on [Bootstrap](http://twitter.github
 1. Open the application in your web browser
 
 ## Development
-I've used [guard](https://github.com/guard/guard) to automatically precompile Less CSS and Coffeescript files in development. A `Guardfile`, `Gemfile` and `Gemfile.lock` are provided for your convenience. Install [ruby](http://www.ruby-lang.org) using [rvm](https://rvm.io/) and [bundler](http://bundler.io/). Then execute `bundle` to retrieve all dependencies and run `bundle exec guard` to start watching the source files.
+I've used [guard](https://github.com/guard/guard) to automatically precompile Less CSS and Coffeescript files in development. A `Guardfile`, `Gemfile` and `Gemfile.lock` are provided for your convenience. Install [ruby](http://www.ruby-lang.org) (preferrably using [rvm](https://rvm.io/)) and [bundler](http://bundler.io/). Then execute `bundle` to retrieve all dependencies and run `bundle exec guard` to start watching the source files.
