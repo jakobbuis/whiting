@@ -1,1 +1,3 @@
-$('document').ready -> alert('hello world!');
+Whiting = new(Backbone.Router.extend(
+
+))();
