@@ -25,17 +25,16 @@
       <div class="span2" id="filter">
         <p>
           <strong>Lidmaatschap</strong>
-          <a href="#">kandidaat-lid</a>
-          <a href="#">gewoon lid</a>
-          <a href="#">oud-lid</a>
-          <a href="#">lid van verdienste</a>
-          <a href="#">geen lid</a>
+          <label><input type="checkbox" name="status[]" value="kandidaatlid" checked> kandidaat-lid</label>
+          <label><input type="checkbox" name="status[]" value="gewoonlid" checked> gewoon lid</label>
+          <label><input type="checkbox" name="status[]" value="oudlid" checked> oud-lid</label>
+          <label><input type="checkbox" name="status[]" value="lidvanverdienste" checked> lid van verdienste</label>
+          <label><input type="checkbox" name="status[]" value="geenlid"> geen lid</label>
         </p>
         <p>
           <strong>Geslacht</strong>
-          <label><input type="radio" name="sex" value=""> Beiden</label>
-          <label><input type="radio" name="sex" value="M"> Man</label>
-          <label><input type="radio" name="sex" value="F"> Vrouw</label>
+          <label><input type="checkbox" name="sex[]" value="M" checked> Man</label>
+          <label><input type="checkbox" name="sex[]" value="F" checked> Vrouw</label>
         </p>
         <p>
           <strong>Geboortedatum</strong>
