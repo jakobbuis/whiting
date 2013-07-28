@@ -1,2 +1,4 @@
 app/stylesheets/application.css
+
 app/javascripts/application.js
+app/javascripts/*/*.js
