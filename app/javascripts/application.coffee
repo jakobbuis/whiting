@@ -1,9 +1,11 @@
-Whiting = new(Backbone.View.extend({
+# Main application class
+Whiting = new (Backbone.View.extend {
   Models: {}
   Views: {}
   Collections: {}
 
-  initialize: -> Backbone.history.start {pushState: true}
+  initialize: -> 
+    Backbone.history.start {pushState: true}
 
   events:
     'keyup #search': 'search'
@@ -15,5 +17,5 @@ Whiting = new(Backbone.View.extend({
   filter: ->
     console.log 'Filtering'
 
-}))({el: document.body});
-
+# Initializes itself on the entire page
+}) {el: document.body} 
