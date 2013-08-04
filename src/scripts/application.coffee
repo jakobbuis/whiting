@@ -6,29 +6,24 @@ require.config
     backbone: '../../vendor/backbone'
 
 define ['jquery', 'underscore', 'backbone'], ($, _, Backbone) -> 
-  alert @
-
-  # # Main application class
-  # class Whiting extends Backbone.View
+  # Main application class
+  class Whiting extends Backbone.View
     
-  #   initialize: -> 
-  #     # Backbone.history.start {pushState: true}
-  #     # # Get collection
-  #     # @people = new Whiting.Collections.People
-  #     # @people.fetch
-  #     # Render view
-  #     # 
+    initialize: -> 
+      Backbone.history.start {pushState: true}
 
-  #   events:
-  #     'keyup #search': 'search'
-  #     'change #filter input': 'filter'
+    events:
+      'keyup #search': 'search'
+      'change #filter input': 'filter'
 
-  #   search: ->
-  #     console.log @.$('#search').val()
+    search: ->
+      console.log @.$('#search').val()
 
-  #   filter: ->
-  #     console.log 'Filtering'
+    filter: ->
+      console.log 'Filtering'
 
-  # # Auto-initalize this class to bootstrap the application
-  # whiting = new Whiting
-  #   
+  # Auto-initalize this class to bootstrap the application
+  whiting = new Whiting
+    
+  # RequireJS-compliancy
+  return {whiting: @}
