@@ -1,5 +1,4 @@
-guard 'coffeescript', :input => 'app/javascripts'
-
-guard 'less', :all_on_start => true, :all_after_change => true do
+guard 'coffeescript', input: 'src/scripts', output: 'app/javascripts'
+guard 'less', output: 'app/stylesheets' do
   watch(%r{^.+\.less$})
 end
