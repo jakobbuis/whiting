@@ -5,7 +5,7 @@ require.config
     underscore: '../../vendor/underscore'
     backbone: '../../vendor/backbone'
 
-define ['jquery', 'underscore', 'backbone'], ($, _, Backbone) -> 
+require ['jquery', 'underscore', 'backbone'], -> 
   # Main application class
   class Whiting extends Backbone.View
     
@@ -24,6 +24,3 @@ define ['jquery', 'underscore', 'backbone'], ($, _, Backbone) ->
 
   # Auto-initalize this class to bootstrap the application
   whiting = new Whiting
-    
-  # RequireJS-compliancy
-  return {whiting: @}
