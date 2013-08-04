@@ -1,0 +1,1 @@
+class Views.Person extends Backbone.View
