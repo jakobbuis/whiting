@@ -8,6 +8,7 @@ require.config
 require ['jquery', 'underscore', 'backbone'], -> 
   # Main application class
   class Whiting extends Backbone.View
+    el: document.body
     
     initialize: -> 
       Backbone.history.start {pushState: true}
